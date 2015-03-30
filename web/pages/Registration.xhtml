@@ -8,10 +8,9 @@
     <ui:param name="bean" value="#{registrationBean}"/>
 
     <ui:define name="edit_body">
-
         <p:outputPanel id="edit_panel">
 
-            <p:panelGrid columns="2" columnClasses="label, value" id="matchGrid">
+            <p:panelGrid columns="2" columnClasses="label, value">
                 <p:outputLabel value="#{msg.firstName}"/>
                 <p:inputText value="#{bean.firstName}"/>
 
@@ -28,8 +27,6 @@
                 <p:outputLabel value="#{msg.passwordRepeat}"/>
                 <p:password widgetVar="pwd2" required="true" label="#{msg.password}" value="#{bean.password}"
                             placeholder="#{msg.phPassword}"/>
-
-                <p:commandButton update="matchGrid" value="Save" />
             </p:panelGrid>
         </p:outputPanel>
     </ui:define>
