@@ -1,0 +1,26 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping>
+        <pattern value="/" />
+        <view-id value="/pages/Vacancies.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/vacancies" />
+        <view-id value="/pages/Vacancies.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/employee" />
+        <view-id value="/pages/JobSeekers.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/sign_up" />
+        <view-id value="/pages/Registration.jsf" />
+    </url-mapping>
+
+</pretty-config>

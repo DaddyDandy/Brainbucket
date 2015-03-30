@@ -1,0 +1,38 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/resources/templates/BaseEditPage.xhtml">
+
+    <ui:param name="bean" value="#{registrationBean}"/>
+
+    <ui:define name="edit_body">
+
+        <p:outputPanel id="edit_panel">
+
+            <p:panelGrid columns="2" columnClasses="label, value" id="matchGrid">
+                <p:outputLabel value="#{msg.firstName}"/>
+                <p:inputText value="#{bean.firstName}"/>
+
+                <p:outputLabel value="#{msg.secondName}"/>
+                <p:inputText value="#{bean.secondName}"/>
+
+                <p:outputLabel value="#{msg.email}"/>
+                <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
+
+                <p:outputLabel value="#{msg.password}"/>
+                <p:password widgetVar="pwd1" match="pwd2" required="true" label="#{msg.password}"
+                            value="#{bean.password}" placeholder="#{msg.phPassword}"/>
+
+                <p:outputLabel value="#{msg.passwordRepeat}"/>
+                <p:password widgetVar="pwd2" required="true" label="#{msg.password}" value="#{bean.password}"
+                            placeholder="#{msg.phPassword}"/>
+
+                <p:commandButton update="matchGrid" value="Save" />
+            </p:panelGrid>
+        </p:outputPanel>
+    </ui:define>
+
+</ui:composition>
+

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #e1e1e1;
+    margin:0;
+    padding:0;
+    height:100%;
+
+    font-family: Arial,sans-serif;
+    font-size: medium;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.header, .footer, .content {
+    min-width: 1024px;
+}
+
+.header {
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.header .header_content, .header .header_content .logo_part,
+.header .header_content .options_part {
+    height: 100%;
+}
+
+.header .header_content {
+    width: 1024px;
+    margin: 0px auto 0px auto;
+    background-color: beige;
+    min-height: 100%;
+}
+
+.header .header_content .logo_part {
+    width: 768px;
+    float: left;
+    background-color: aqua;
+}
+
+.header .header_content .options_part {
+    width: 230px;
+    float: left;
+    background-color: aquamarine;
+}
+
+.content, .content .main, .content .sidebar, .registration_body {
+    min-height: 500px;
+}
+
+.content {
+    width: 1024px;
+    margin: 0px auto 0px auto;
+    padding-bottom: 70px;
+}
+
+.content .main {
+    width: 768px;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+.content .sidebar {
+    width: 230px;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+.right {
+    margin-left: 26px;
+    margin-right: 0px;
+}
+
+.left {
+    margin-left: 0px;
+    margin-right: 26px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    text-align: center;
+    width: 100%;
+
+    padding-top: 30px;
+}
+
+.footer_content {
+    background-color: white;
+    height: 100%;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.round_corners {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.content .registration_body {
+    height: 100%;
+    background-color: white;
+}
+
+.edit_body {
+    padding: 40px 60px 40px 60px;
+}
+
+.main_content_padding {
+    padding: 45px 50px 25px 50px;
+}
+
+.label {
+
+}
+
+.value {
+
+}
+
+.ui-panelgrid tr,
+.ui-panelgrid td,
+.ui-panelgrid-cell label {
+    border: none !important;
+}

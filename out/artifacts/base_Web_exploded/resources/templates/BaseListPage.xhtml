@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/resources/templates/Main.xhtml">
+
+    <ui:define name="content_body">
+        <div class="main round_corners">
+            <ui:insert name="main_part">
+                main part
+            </ui:insert>
+        </div>
+        <div class="sidebar right round_corners">
+            <ui:insert name="sidebur_add_button">
+                sub part
+            </ui:insert>
+            <ui:insert name="sidebur_search_filter"/>
+            <ui:insert name="sidebur_bottom_block"/>
+        </div>
+    </ui:define>
+
+</ui:composition>
+
