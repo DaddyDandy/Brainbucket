@@ -6,12 +6,14 @@
                 template="/resources/templates/BaseDevidedPage.xhtml">
 
     <ui:define name="main_part">
-
-    </ui:define>
-    <ui:define name="sub_part">
-        <ui:insert name="sidebur_add_button"/>
-        <ui:insert name="sidebur_search_filter"/>
-        <ui:insert name="sidebur_bottom_block"/>
+        <div class="round-corners edit-body">
+            <h:form id="form" prependId="false">
+                <p:messages id="messages" showDetail="true" autoUpdate="true"/>
+                <div class="round-corners">
+                    <ui:insert name="edit_body"/>
+                </div>
+            </h:form>
+        </div>
     </ui:define>
 
 </ui:composition>

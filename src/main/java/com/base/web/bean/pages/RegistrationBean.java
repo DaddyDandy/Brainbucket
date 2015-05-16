@@ -49,6 +49,19 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
         entity.setSecondName(secondName);
     }
 
+    public void saveUser() {
+        onSave();
+    }
+
+    public void cancel() {
+        goBack();
+    }
+
+    @Override
+    public void goBack() {
+
+    }
+
     public String getEmail() {
         return email;
     }

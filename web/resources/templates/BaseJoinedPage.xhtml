@@ -3,8 +3,12 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/resources/templates/BaseDevidedPage.xhtml">
+                template="/resources/templates/Main.xhtml">
 
-
+    <ui:define name="content_body">
+        <div class="round-corners">
+            <ui:insert name="large_body"/>
+        </div>
+    </ui:define>
 
 </ui:composition>

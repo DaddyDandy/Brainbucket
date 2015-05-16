@@ -19,7 +19,7 @@ public abstract class BaseEntityEditBean<T extends IndexedEntity> extends PageBe
 
     @Override
     protected void onConstruct() {
-
+        onLoad();
     }
 
     public abstract void onLoad();

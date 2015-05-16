@@ -24,44 +24,44 @@ html, body {
 
 .header {
     top: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color: white;
     margin-bottom: 30px;
 }
 
-.header .header_content, .header .header_content .logo_part,
-.header .header_content .options_part {
+.header .header-content, .header .header-content .logo-part,
+.header .header-content .options-part {
     height: 100%;
 }
 
-.header .header_content {
+.header .header-content {
     width: 1024px;
     margin: 0px auto 0px auto;
     background-color: beige;
     min-height: 100%;
 }
 
-.header .header_content .logo_part {
+.header .header-content .logo-part {
     width: 768px;
     float: left;
     background-color: aqua;
 }
 
-.header .header_content .options_part {
+.header .header-content .options-part {
     width: 230px;
     float: left;
     background-color: aquamarine;
 }
 
-.content, .content .main, .content .sidebar, .registration_body {
+.content, .content .main, .content .sidebar, .registration-body {
     min-height: 500px;
 }
 
 .content {
     width: 1024px;
     margin: 0px auto 0px auto;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .content .main {
@@ -75,7 +75,6 @@ html, body {
     width: 230px;
     height: 100%;
     float: left;
-    background-color: white;
 }
 
 .right {
@@ -92,36 +91,36 @@ html, body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 70px;
+    height: 50px;
     text-align: center;
     width: 100%;
 
     padding-top: 30px;
 }
 
-.footer_content {
+.footer-content {
     background-color: white;
     height: 100%;
 }
 
-.no_padding {
+.no-padding {
     padding: 0;
 }
 
-.round_corners {
+.round-corners {
     border-radius: 5px 5px 5px 5px;
 }
 
-.content .registration_body {
+.content .registration-body {
     height: 100%;
     background-color: white;
 }
 
-.edit_body {
+.edit-body {
     padding: 40px 60px 40px 60px;
 }
 
-.main_content_padding {
+.main-content-padding {
     padding: 45px 50px 25px 50px;
 }
 
@@ -137,4 +136,8 @@ html, body {
 .ui-panelgrid td,
 .ui-panelgrid-cell label {
     border: none !important;
+}
+
+.btn-bottom .ui-button {
+    min-width: 160px;
 }

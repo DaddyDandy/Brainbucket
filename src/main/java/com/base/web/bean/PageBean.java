@@ -13,5 +13,9 @@ public abstract class PageBean implements Serializable {
         onConstruct();
     }
 
+    public void goBack() {
+
+    }
+
     protected abstract void onConstruct();
 }

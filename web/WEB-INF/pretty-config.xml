@@ -15,11 +15,11 @@
 
     <url-mapping>
         <pattern value="/employee" />
-        <view-id value="/pages/JobSeekers.jsf" />
+        <view-id value="/pages/Jobseekers.jsf" />
     </url-mapping>
 
     <url-mapping>
-        <pattern value="/sign_up" />
+        <pattern value="/signup" />
         <view-id value="/pages/Registration.jsf" />
     </url-mapping>
 

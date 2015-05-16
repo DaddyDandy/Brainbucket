@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * Created by Cooper on 29.03.2015.
  */
-public class BaseListBean<T extends IndexedEntity> extends PageBean implements Serializable {
+public abstract  class BaseListBean<T extends IndexedEntity> extends PageBean implements Serializable {
 
     @Override
     protected void onConstruct() {

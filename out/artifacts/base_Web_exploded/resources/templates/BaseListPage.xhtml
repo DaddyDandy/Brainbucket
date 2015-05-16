@@ -3,21 +3,15 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/resources/templates/Main.xhtml">
+                template="/resources/templates/BaseDevidedPage.xhtml">
 
-    <ui:define name="content_body">
-        <div class="main round_corners">
-            <ui:insert name="main_part">
-                main part
-            </ui:insert>
-        </div>
-        <div class="sidebar right round_corners">
-            <ui:insert name="sidebur_add_button">
-                sub part
-            </ui:insert>
-            <ui:insert name="sidebur_search_filter"/>
-            <ui:insert name="sidebur_bottom_block"/>
-        </div>
+    <ui:define name="main_part">
+
+    </ui:define>
+    <ui:define name="sub_part">
+        <ui:insert name="sidebur_add_button"/>
+        <ui:insert name="sidebur_search_filter"/>
+        <ui:insert name="sidebur_bottom_block"/>
     </ui:define>
 
 </ui:composition>

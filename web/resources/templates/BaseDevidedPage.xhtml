@@ -6,14 +6,11 @@
                 template="/resources/templates/Main.xhtml">
 
     <ui:define name="content_body">
-        <div class="registration_body round_corners">
-            <div class="edit_body">
-                <h:form id="form" prependId="false">
-                    <p:messages id="messages" showDetail="true" autoUpdate="true" />
-
-                    <ui:insert name="edit_body" />
-                </h:form>
-            </div>
+        <div class="main">
+            <ui:insert name="main_part"/>
+        </div>
+        <div class="sidebar right">
+            <ui:insert name="sub_part"/>
         </div>
     </ui:define>
 

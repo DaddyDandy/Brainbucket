@@ -3,15 +3,14 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/resources/templates/BaseEditPage.xhtml">
+                template="/resources/templates/BaseSmallEditPage.xhtml">
 
     <ui:param name="bean" value="#{registrationBean}"/>
 
     <ui:define name="edit_body">
-
         <p:outputPanel id="edit_panel">
 
-            <p:panelGrid columns="2" columnClasses="label, value" id="matchGrid">
+            <p:panelGrid columns="2" columnClasses="label, value">
                 <p:outputLabel value="#{msg.firstName}"/>
                 <p:inputText value="#{bean.firstName}"/>
 
@@ -22,16 +21,21 @@
                 <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
 
                 <p:outputLabel value="#{msg.password}"/>
-                <p:password widgetVar="pwd1" match="pwd2" required="true" label="#{msg.password}"
+                <p:password widgetVar="pwd1" required="true" label="#{msg.password}"
                             value="#{bean.password}" placeholder="#{msg.phPassword}"/>
 
                 <p:outputLabel value="#{msg.passwordRepeat}"/>
-                <p:password widgetVar="pwd2" required="true" label="#{msg.password}" value="#{bean.password}"
-                            placeholder="#{msg.phPassword}"/>
-
-                <p:commandButton update="matchGrid" value="Save" />
+                <p:password widgetVar="pwd2" required="true" label="#{msg.password}"
+                            value="#{bean.password}"  placeholder="#{msg.phPassword}"/>
             </p:panelGrid>
         </p:outputPanel>
+
+        <div class="btn-bottom">
+            <p:commandButton widgetVar="submitBtn" action="#{bean.saveUser}" process="@all"
+                             value="#{msg.btnSave}"/>
+            <p:commandButton widgetVar="cancelBtn" action="#{bean.cancel}"
+                             value="#{msg.btnCancel}"/>
+        </div>
     </ui:define>
 
 </ui:composition>

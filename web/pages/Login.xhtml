@@ -5,36 +5,25 @@
                 xmlns:p="http://primefaces.org/ui"
                 template="/resources/templates/BaseSmallEditPage.xhtml">
 
-    <ui:param name="bean" value="#{registrationBean}"/>
+    <ui:param name="bean" value="#{loginBean}"/>
 
     <ui:define name="edit_body">
-        <p:outputPanel id="edit_panel">
-
+        <p:outputPanel id="login_panel">
             <p:panelGrid columns="2" columnClasses="label, value">
-                <p:outputLabel value="#{msg.firstName}"/>
-                <p:inputText value="#{bean.firstName}"/>
-
-                <p:outputLabel value="#{msg.secondName}"/>
-                <p:inputText value="#{bean.secondName}"/>
-
                 <p:outputLabel value="#{msg.email}"/>
                 <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
 
                 <p:outputLabel value="#{msg.password}"/>
                 <p:password widgetVar="pwd1" required="true" label="#{msg.password}"
                             value="#{bean.password}" placeholder="#{msg.phPassword}"/>
-
-                <p:outputLabel value="#{msg.passwordRepeat}"/>
-                <p:password widgetVar="pwd2" required="true" label="#{msg.password}"
-                            value="#{bean.password}"  placeholder="#{msg.phPassword}"/>
             </p:panelGrid>
         </p:outputPanel>
 
         <div class="btn-bottom">
-            <p:commandButton widgetVar="submitBtn" action="#{bean.saveUser}" process="@all"
-                             value="#{msg.btnSave}"/>
-            <p:commandButton widgetVar="cancelBtn" action="#{bean.cancel}"
-                             value="#{msg.btnCancel}"/>
+            <p:commandButton widgetVar="submitBtn" action="#{bean.signin}"
+                             value="#{msg.signin}"/>
+            <p:commandButton widgetVar="cancelBtn" action="#{bean.signup}"
+                             value="#{msg.signup}"/>
         </div>
     </ui:define>
 

@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/resources/templates/Main.xhtml">
+
+    <ui:define name="large_body">
+            <div class="edit-body">
+                <h:form id="form" prependId="false">
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" />
+
+                    <ui:insert name="edit_body" />
+                </h:form>
+            </div>
+    </ui:define>
+
+</ui:composition>
+
