@@ -10,18 +10,29 @@ import java.util.List;
 @Table(name = "clients")
 public class Client extends User {
 
-    @OneToMany(mappedBy = "client")
-    List<Message> messages;
+    @OneToOne(mappedBy = "client")
+    private Profile profile;
 
     @OneToOne(mappedBy = "client")
-    Profile profile;
+    private Company company;
 
-    public List<Message> getMessages() {
-        return messages;
+    @OneToOne(fetch = FetchType.LAZY)
+    private User user;
+
+    public Company getCompany() {
+        return company;
     }
 
-    public void setMessages(List<Message> messages) {
-        this.messages = messages;
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Profile getProfile() {
