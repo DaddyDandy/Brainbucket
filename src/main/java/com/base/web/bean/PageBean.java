@@ -17,5 +17,9 @@ public abstract class PageBean implements Serializable {
 
     }
 
+    public String getPageTitle() {
+        return "";
+    }
+
     protected abstract void onConstruct();
 }

@@ -5,6 +5,6 @@ package com.base.web.enums;
  */
 public enum RoleType {
 
-    ADMIN, EMPLOYER, JOB_SEEKER, FREE_USER;
+    ROLE_ANONYMOUS, ROLE_USER, ROLE_ADMIN;
 
 }

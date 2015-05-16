@@ -38,20 +38,17 @@ html, body {
 .header .header-content {
     width: 1024px;
     margin: 0px auto 0px auto;
-    background-color: beige;
     min-height: 100%;
 }
 
 .header .header-content .logo-part {
     width: 768px;
     float: left;
-    background-color: aqua;
 }
 
 .header .header-content .options-part {
     width: 230px;
     float: left;
-    background-color: aquamarine;
 }
 
 .content, .content .main, .content .sidebar, .registration-body {

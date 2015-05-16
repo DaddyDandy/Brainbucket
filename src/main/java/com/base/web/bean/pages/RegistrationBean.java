@@ -2,6 +2,7 @@ package com.base.web.bean.pages;
 
 import com.base.persistance.entityes.domain.User;
 import com.base.web.bean.BaseEntityEditBean;
+import com.base.web.commons.helpers.ResourceHelper;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
@@ -60,6 +61,11 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
     @Override
     public void goBack() {
 
+    }
+
+    @Override
+    public String getPageTitle() {
+        return ResourceHelper.getValue("titleRegistration");
     }
 
     public String getEmail() {

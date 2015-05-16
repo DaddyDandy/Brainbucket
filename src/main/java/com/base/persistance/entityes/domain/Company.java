@@ -6,13 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
- * Created by Cooper on 29.03.2015.
+ * Created by Cooper on 17.05.2015.
  */
 @Entity
-@Table(name = "vacancy")
-public class Vacancy extends NamedEntity {
-
-
-
-
+@Table(name = "companies")
+public class Company extends NamedEntity {
 }

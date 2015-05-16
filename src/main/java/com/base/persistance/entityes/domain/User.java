@@ -8,9 +8,8 @@ import javax.persistence.*;
 /**
  * Created by Cooper on 28.03.2015.
  */
-@Entity
-@Table(name = "user")
-public class User extends NamedEntity{
+@MappedSuperclass
+public class User extends NamedEntity {
 
     @Column(name = "login")
     private String login;
@@ -27,6 +26,11 @@ public class User extends NamedEntity{
     @Column(name = "role_type")
     @Enumerated(value = EnumType.STRING)
     private RoleType roleType;
+
+    @Override
+    public String getName() {
+        return getFirstName().concat(" ").concat(getSecondName());
+    }
 
     public String getLogin() {
         return login;
