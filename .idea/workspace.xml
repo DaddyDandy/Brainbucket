@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73835ce0-e519-4761-bf61-94df24864598" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/templates/BaseJoinedPage.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/pages/Login.xhtml" />
-      <change type="DELETED" beforePath="E:\development\JAVA\code\base\out\artifacts\base_Web_exploded\resources\templates\BaseEditPage.xhtml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseEntityEditBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseEntityEditBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseListBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseListBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/resources/templates/BaseListPage.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/resources/templates/BaseListPage.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/templates/Header.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/Header.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/Index.xhtml" afterPath="$PROJECT_DIR$/web/pages/Index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/LoginBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/LoginBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/templates/Main.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/Main.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/base/web/bean/PageBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/base/web/bean/PageBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Registration.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Registration.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/Registration.xhtml" afterPath="$PROJECT_DIR$/web/pages/Registration.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/RegistrationBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/RegistrationBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Vacancies.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/pages/Vacancies.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/Vacancies.xhtml" afterPath="$PROJECT_DIR$/web/pages/Vacancies.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/locale_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/locale_ru.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/resources/css/main.css" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/resources/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/main.css" afterPath="$PROJECT_DIR$/web/resources/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/WEB-INF/pretty-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/base_Web_exploded/WEB-INF/pretty-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pretty-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/pretty-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_6_RELEASE.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base.iml" afterPath="$PROJECT_DIR$/base.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\development\JAVA\code\base\web\resources\templates\BaseEditPage.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/BaseLargeEditPage.xhtml" />
-      <change type="MOVED" beforePath="E:\development\JAVA\code\base\web\resources\templates\BaseListPage.xhtml" afterPath="$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml" />
     </list>
     <ignored path="base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,16 +43,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2516">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/Index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,21 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/templates/Header.xhtml">
+      <file leaf-file-name="Jobseekers.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pages/Jobseekers.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="459">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Footer.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resources/templates/Footer.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +66,28 @@
       <file leaf-file-name="Registration.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/Registration.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="816">
-              <caret line="28" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="816">
+              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseSmallEditPage.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="408">
+              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDevidedPage.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2924731" vertical-offset="0" max-vertical-offset="465">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -131,14 +120,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginBean.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/LoginBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36646706" vertical-offset="0" max-vertical-offset="835">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="2210">
+              <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,19 +148,6 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <caret line="16" column="6" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseEntityEditBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseEntityEditBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="359" max-vertical-offset="850">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,7 +163,6 @@
         <option value="$PROJECT_DIR$/web/Index.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/web/listeners/ApplicationListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/ApplicationListener.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/persistance/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/IndexBean.java" />
@@ -201,8 +186,6 @@
         <option value="$PROJECT_DIR$/web/resources/templates/BaseListPage.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/templates/BaseLargeEditPage.xhtml" />
         <option value="$PROJECT_DIR$/web/resources/templates/BaseJoinedPage.xhtml" />
-        <option value="$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml" />
-        <option value="$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/web/bean/BaseListBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/web/bean/PageBean.java" />
         <option value="$PROJECT_DIR$/web/resources/css/main.css" />
@@ -213,6 +196,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/locale_ru.properties" />
         <option value="$PROJECT_DIR$/web/pages/Login.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/LoginBean.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml" />
+        <option value="$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml" />
       </list>
     </option>
   </component>
@@ -1052,15 +1038,15 @@
       <workItem from="1429465689425" duration="795000" />
       <workItem from="1431249279335" duration="940000" />
       <workItem from="1431710868093" duration="634000" />
-      <workItem from="1431762558802" duration="5318000" />
+      <workItem from="1431762558802" duration="6591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47591000" />
+    <option name="totallyTimeSpent" value="48864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="34" width="1845" height="995" extended-state="0" />
+    <frame x="30" y="34" width="1845" height="995" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1075,7 +1061,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3986095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1272,13 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/Jobseekers.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.633333" vertical-offset="0" max-vertical-offset="425">
@@ -1314,13 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71302426" vertical-offset="765" max-vertical-offset="1819">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1372,14 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/jre/lib/resources.jar!/com/sun/org/apache/xerces/internal/impl/xpath/regex/message.properties">
       <provider editor-type-id="ResourceBundle">
         <state />
@@ -1387,14 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="442">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1447,14 +1403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/Index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/resources/templates/Header.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="459">
@@ -1479,14 +1427,6 @@
             <element signature="e#443#444#0" expanded="true" />
             <element signature="e#467#468#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/Registration.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="816">
-          <caret line="28" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,11 +1463,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/base/web/bean/pages/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36646706" vertical-offset="0" max-vertical-offset="835">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="2210">
+          <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/Index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/Jobseekers.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/Registration.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="816">
+          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseSmallEditPage.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="408">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/templates/BaseDevidedPage.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2924731" vertical-offset="0" max-vertical-offset="465">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
