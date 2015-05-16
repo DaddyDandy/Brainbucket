@@ -1,6 +1,6 @@
 package com.base.persistance.entityes.domain;
 
-import com.base.persistance.entityes.IndexedEntity;
+import com.base.persistance.entityes.SkillBase;
 
 import javax.persistence.*;
 

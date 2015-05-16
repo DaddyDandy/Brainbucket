@@ -33,6 +33,7 @@ public class Profile extends IndexedEntity {
     private Gender gender;
 
     @Column(name = "birth_date")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date birthDate;
 
     @Column(name = "specialization")

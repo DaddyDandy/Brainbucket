@@ -1,4 +1,4 @@
-package com.base.persistance.entityes.domain;
+package com.base.persistance.entityes;
 
 import com.base.persistance.entityes.IndexedEntity;
 

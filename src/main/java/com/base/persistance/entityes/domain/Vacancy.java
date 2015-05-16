@@ -5,6 +5,7 @@ import com.base.web.enums.JobTimeType;
 import com.base.web.enums.Location;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,6 +34,13 @@ public class Vacancy extends NamedEntity {
 
     @OneToMany(mappedBy = "vacancy")
     private List<SkillVacancy> skillVacancies;
+
+    @Column(name = "creationDate")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date creationDate;
+
+    @Column(name = "reviews")
+    private Integer reviews;
 
     public Location getLocation() {
         return location;
