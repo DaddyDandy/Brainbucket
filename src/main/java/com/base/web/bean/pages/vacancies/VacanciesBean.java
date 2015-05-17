@@ -7,6 +7,7 @@ import com.base.web.commons.helpers.ResourceHelper;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.persistence.criteria.CriteriaBuilder;
 
 /**
  * Created by Cooper on 28.03.2015.
@@ -22,7 +23,7 @@ public class VacanciesBean extends BaseListBean<Vacancy> {
 
     @Override
     protected void buildSearchCriteria() {
-
+        CriteriaBuilder cb;
     }
 
     @Override

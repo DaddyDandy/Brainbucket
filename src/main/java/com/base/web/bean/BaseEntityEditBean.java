@@ -42,6 +42,14 @@ public abstract class BaseEntityEditBean<T extends IndexedEntity> extends PageBe
         }
     }
 
+    public void onDelete() {
+
+    }
+
+    public void onUpdate() {
+
+    }
+
     public T getEntity() {
         return entity;
     }

@@ -1,6 +1,6 @@
 package com.base.persistance;
 
-import com.base.persistance.entityes.domain.User;
+import com.base.persistance.entityes.domain.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -26,6 +26,15 @@ public class HibernateUtil {
 
     public static void addAnnotatedClasses(Configuration config) {
         config.addAnnotatedClass(User.class);
+        config.addAnnotatedClass(Client.class);
+        config.addAnnotatedClass(Admin.class);
+        config.addAnnotatedClass(Company.class);
+        config.addAnnotatedClass(ContactField.class);
+        config.addAnnotatedClass(Message.class);
+        config.addAnnotatedClass(Profile.class);
+        config.addAnnotatedClass(SkillClient.class);
+        config.addAnnotatedClass(SkillVacancy.class);
+        config.addAnnotatedClass(Vacancy.class);
     }
 
     public static synchronized SessionFactory getSessionFactory() {
@@ -73,7 +82,6 @@ public class HibernateUtil {
         s.getTransaction().begin();
         s.close();
         s = null;
-
     }
 
     private static void checkConnection(Date d1) {
