@@ -4,5 +4,18 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
                 template="/resources/templates/BaseDevidedPage.xhtml">
+    <ui:param name="bean" value="#{vacanciesBean}"/>
+
+    <ui:define name="main_part">
+
+    </ui:define>
+
+    <ui:define name="sub_part">
+        <h:form id="subForm">
+            <p:commandButton
+                    value="#{msg.addVacancy}" style="width: 100%;"
+                    action="#{bean.createVacancy}" />
+        </h:form>
+    </ui:define>
 
 </ui:composition>

@@ -5,14 +5,18 @@
                 xmlns:p="http://primefaces.org/ui"
                 template="/resources/templates/Main.xhtml">
 
-    <ui:define name="large_body">
+    <ui:define name="content_body">
+        <div class="main-large round-corners">
             <div class="edit-body">
                 <h:form id="form" prependId="false">
                     <p:messages id="messages" showDetail="true" autoUpdate="true" />
 
-                    <ui:insert name="edit_body" />
+
+                        <ui:insert name="edit_body" />
+
                 </h:form>
             </div>
+        </div>
     </ui:define>
 
 </ui:composition>

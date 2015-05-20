@@ -8,12 +8,21 @@
       xmlns:p="http://primefaces.org/ui">
 
 <ui:composition>
+
+    <ui:param name="renderO" value="#{bean.renderOptionsLinks}"/>
+    <ui:param name="renderG" value="#{bean.renderGuestLinks}"/>
+
     <div class="header-content">
         <div class="logo-part">
-            Logo
+
         </div>
         <div class="options-part right">
-            Options
+            <ui:fragment rendered="#{renderG}">
+                <ui:include src="HeaderGuestLinks.xhtml"/>
+            </ui:fragment>
+            <ui:fragment rendered="#{renderO}">
+                <ui:include src="HeaderOptionsPart.xhtml"/>
+            </ui:fragment>
         </div>
     </div>
 </ui:composition>

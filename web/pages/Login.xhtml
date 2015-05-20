@@ -3,7 +3,7 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/resources/templates/BaseSmallEditPage.xhtml">
+                template="/resources/templates/BaseLargeEditPage.xhtml">
 
     <ui:param name="bean" value="#{loginBean}"/>
 
@@ -14,16 +14,15 @@
                 <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
 
                 <p:outputLabel value="#{msg.password}"/>
-                <p:password widgetVar="pwd1" required="true" label="#{msg.password}"
-                            value="#{bean.password}" placeholder="#{msg.phPassword}"/>
+                <p:password label="#{msg.password}"
+                            value="#{bean.password}"
+                            placeholder="#{msg.phPassword}"/>
             </p:panelGrid>
         </p:outputPanel>
 
         <div class="btn-bottom">
-            <p:commandButton widgetVar="submitBtn" action="#{bean.signin}"
+            <p:commandButton widgetVar="submitBtn" action="#{bean.signIn}"
                              value="#{msg.signin}"/>
-            <p:commandButton widgetVar="cancelBtn" action="#{bean.signup}"
-                             value="#{msg.signup}"/>
         </div>
     </ui:define>
 

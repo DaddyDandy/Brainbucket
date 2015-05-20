@@ -13,6 +13,15 @@ html, body {
     font-size: medium;
 }
 
+a {
+    color: #505050;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .wrapper {
     min-height: 100%;
     position: relative;
@@ -49,6 +58,8 @@ html, body {
 .header .header-content .options-part {
     width: 230px;
     float: left;
+    line-height: 60px;
+    text-align: right;
 }
 
 .content, .content .main, .content .sidebar, .registration-body {
@@ -63,6 +74,13 @@ html, body {
 
 .content .main {
     width: 768px;
+    height: 100%;
+    float: left;
+    background-color: white;
+}
+
+.content .main-large {
+    width: 1024px;
     height: 100%;
     float: left;
     background-color: white;
@@ -137,4 +155,29 @@ html, body {
 
 .btn-bottom .ui-button {
     min-width: 160px;
+}
+
+.guest-links {
+    line-height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vertical-separator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 40px;
+    background: #d0d0d0;
+    margin: 0 10px;
+}
+
+.dark-link {
+    color: #A8A8A8 !important;
+}
+
+.link {
+    color: #00e000;
+    display: inline-block;
+    position: relative;
 }

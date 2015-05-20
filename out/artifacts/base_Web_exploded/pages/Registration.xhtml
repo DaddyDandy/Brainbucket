@@ -9,7 +9,6 @@
 
     <ui:define name="edit_body">
         <p:outputPanel id="edit_panel">
-
             <p:panelGrid columns="2" columnClasses="label, value">
                 <p:outputLabel value="#{msg.firstName}"/>
                 <p:inputText value="#{bean.firstName}"/>
@@ -21,12 +20,10 @@
                 <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
 
                 <p:outputLabel value="#{msg.password}"/>
-                <p:password widgetVar="pwd1" required="true" label="#{msg.password}"
-                            value="#{bean.password}" placeholder="#{msg.phPassword}"/>
+                <p:password label="#{msg.password}" value="#{bean.password}" placeholder="#{msg.phPassword}"/>
 
                 <p:outputLabel value="#{msg.passwordRepeat}"/>
-                <p:password widgetVar="pwd2" required="true" label="#{msg.password}"
-                            value="#{bean.password}"  placeholder="#{msg.phPassword}"/>
+                <p:password label="#{msg.password}" value="#{bean.password}"  placeholder="#{msg.phPassword}"/>
             </p:panelGrid>
         </p:outputPanel>
 

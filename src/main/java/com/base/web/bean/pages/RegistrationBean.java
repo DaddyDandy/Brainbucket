@@ -6,6 +6,7 @@ import com.base.web.commons.helpers.ResourceHelper;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import java.io.IOException;
 
 /**
  * Created by Cooper on 29.03.2015.
@@ -22,13 +23,9 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
 
     private String secondName;
 
-    public RegistrationBean() {
-        entity = new User();
-    }
-
     @Override
     public void onLoad() {
-
+        entity = new User();
     }
 
     @Override
@@ -40,7 +37,7 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
     public void onSave() {
         initUser();
 
-        super.onSave();
+        super.save();
     }
 
     private void initUser() {
@@ -54,18 +51,28 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
         onSave();
     }
 
-    public void cancel() {
+    public void cancel() throws IOException {
         goBack();
     }
 
     @Override
-    public void goBack() {
-
+    public void goBack() throws IOException {
+        goTo("/");
     }
 
     @Override
     public String getPageTitle() {
         return ResourceHelper.getValue("titleRegistration");
+    }
+
+    @Override
+    public boolean isRenderGuestLinks() {
+        return false;
+    }
+
+    @Override
+    public boolean isRenderOptionsLinks() {
+        return true;
     }
 
     public String getEmail() {

@@ -19,8 +19,28 @@
     </url-mapping>
 
     <url-mapping>
+        <pattern value="/signin" />
+        <view-id value="/pages/Login.jsf" />
+    </url-mapping>
+
+    <url-mapping>
         <pattern value="/signup" />
         <view-id value="/pages/Registration.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/vacancies/new" />
+        <view-id value="/pages/VacancyEdit.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/vacancies/#{id}" />
+        <view-id value="/pages/VacancyView.jsf" />
+    </url-mapping>
+
+    <url-mapping>
+        <pattern value="/vacancies/#{id}/edit" />
+        <view-id value="/pages/VacancyEdit.jsf" />
     </url-mapping>
 
 </pretty-config>

@@ -4,10 +4,17 @@ import com.base.persistance.entityes.domain.Vacancy;
 import com.base.web.bean.BaseListBean;
 import com.base.web.bean.PageBean;
 import com.base.web.commons.helpers.ResourceHelper;
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Order;
+import org.hibernate.sql.Alias;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
 import javax.persistence.criteria.CriteriaBuilder;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by Cooper on 28.03.2015.
@@ -22,8 +29,12 @@ public class VacanciesBean extends BaseListBean<Vacancy> {
     }
 
     @Override
-    protected void buildSearchCriteria() {
-        CriteriaBuilder cb;
+    protected void buildSearchCriteria(List<Criteria> criterias, List<Alias> aliases, List<Order> orders) {
+
+    }
+
+    public void createVacancy() throws IOException {
+        goTo("/signin");
     }
 
     @Override
