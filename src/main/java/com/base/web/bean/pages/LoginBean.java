@@ -4,6 +4,7 @@ import com.base.web.bean.PageBean;
 import com.base.web.commons.helpers.ResourceHelper;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
 import java.io.IOException;
 
@@ -35,9 +36,7 @@ public class LoginBean extends PageBean {
     }
 
     public void signUp() throws IOException {
-
-
-        goTo("/");
+        goTo("/signup");
     }
 
     @Override
@@ -65,4 +64,5 @@ public class LoginBean extends PageBean {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

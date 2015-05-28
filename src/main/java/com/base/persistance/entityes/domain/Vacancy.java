@@ -18,19 +18,19 @@ public class Vacancy extends NamedEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     private Company company;
 
-    @Column(name = "location")
+    @Column
     @Enumerated(value = EnumType.STRING)
     private Location location;
 
-    @Column(name = "location")
+    @Column
     @Enumerated(value = EnumType.STRING)
     private JobTimeType jobTimeType;
 
-    @Column(name = "location")
-    private String generalRequirements;
+    @Column
+    private String bonuses;
 
-    @Column(name = "location")
-    private String currentTasks;
+    @Column
+    private String generalRequirements;
 
     @OneToMany(mappedBy = "vacancy")
     private List<SkillVacancy> skillVacancies;
@@ -58,20 +58,20 @@ public class Vacancy extends NamedEntity {
         this.jobTimeType = jobTimeType;
     }
 
+    public String getBonuses() {
+        return bonuses;
+    }
+
+    public void setBonuses(String bonuses) {
+        this.bonuses = bonuses;
+    }
+
     public String getGeneralRequirements() {
         return generalRequirements;
     }
 
     public void setGeneralRequirements(String generalRequirements) {
         this.generalRequirements = generalRequirements;
-    }
-
-    public String getCurrentTasks() {
-        return currentTasks;
-    }
-
-    public void setCurrentTasks(String currentTasks) {
-        this.currentTasks = currentTasks;
     }
 
     public List<SkillVacancy> getSkillVacancies() {

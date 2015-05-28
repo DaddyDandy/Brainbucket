@@ -9,7 +9,7 @@
 
     <ui:define name="edit_body">
         <p:outputPanel id="login_panel">
-            <p:panelGrid columns="2" columnClasses="label, value">
+            <p:panelGrid columns="2" columnClasses="label, value" style="margin: auto;">
                 <p:outputLabel value="#{msg.email}"/>
                 <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
 
@@ -23,6 +23,8 @@
         <div class="btn-bottom">
             <p:commandButton widgetVar="submitBtn" action="#{bean.signIn}"
                              value="#{msg.signin}"/>
+            <p:commandButton widgetVar="submitBtn" action="#{bean.signUp}"
+                             value="#{msg.signup}"/>
         </div>
     </ui:define>
 

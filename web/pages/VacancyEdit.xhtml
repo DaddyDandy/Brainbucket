@@ -10,21 +10,24 @@
     <ui:define name="edit_body">
         <p:outputPanel id="login_panel">
             <p:panelGrid columns="2" columnClasses="label, value">
-                <p:outputLabel value="#{msg.email}"/>
-                <p:inputText value="#{bean.email}" placeholder="#{msg.phEmail}"/>
-
-                <p:outputLabel value="#{msg.password}"/>
-                <p:password label="#{msg.password}"
-                            value="#{bean.password}"
-                            placeholder="#{msg.phPassword}"/>
+                <p:outputLabel value="Name:"/>
+                <p:inputText id="vacancyName"
+                        value="#{bean.name}" style="width: 400px;"/>
+                <p:outputLabel value="General requirements:"/>
+                <p:inputTextarea    id="vacancyGR"
+                        value="#{bean.generalRequirements}" rows="10"
+                                 style="width: 400px; height: 200px; overflow: auto;"/>
+                <p:outputLabel value="Bonuses:"/>
+                <p:inputTextarea value="#{bean.bonuses}" rows="10"
+                                 style="width: 400px; height: 200px; overflow: auto;"/>
             </p:panelGrid>
         </p:outputPanel>
 
         <div class="btn-bottom">
-            <p:commandButton widgetVar="submitBtn" action="#{bean.signIn}"
-                             value="#{msg.signin}"/>
-            <p:commandButton widgetVar="cancelBtn" action="#{bean.signUp}"
-                             value="#{msg.signup}"/>
+            <p:commandButton widgetVar="submitBtn" action="#{bean.doSave}"
+                             value="#{msg.btnSave}"/>
+            <p:commandButton widgetVar="cancelBtn" action="#{bean.cancel}"
+                             value="#{msg.btnCancel}"/>
         </div>
     </ui:define>
 

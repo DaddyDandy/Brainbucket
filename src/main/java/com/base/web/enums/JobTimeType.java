@@ -7,4 +7,10 @@ public enum JobTimeType {
 
     FULL_TIME, PART_TIME, CONTRACT, REMOTE;
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+
 }

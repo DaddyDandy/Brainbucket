@@ -19,9 +19,7 @@ public abstract class BaseEntityEditBean<T extends IndexedEntity> extends PageBe
 
     protected T entity;
 
-    public BaseEntityEditBean() {
-
-    }
+    private boolean validationFailed;
 
     @Override
     protected void onConstruct() {
@@ -33,6 +31,13 @@ public abstract class BaseEntityEditBean<T extends IndexedEntity> extends PageBe
     public abstract void onValidate();
 
     public abstract void onSave();
+
+    public void doSave() {
+        onValidate();
+        if (!validationFailed) {
+            onSave();
+        }
+    }
 
     public void save() {
         Session session = null;
@@ -88,5 +93,13 @@ public abstract class BaseEntityEditBean<T extends IndexedEntity> extends PageBe
 
     public void setEntity(T entity) {
         this.entity = entity;
+    }
+
+    public boolean isValidationFailed() {
+        return validationFailed;
+    }
+
+    public void setValidationFailed(boolean validationFailed) {
+        this.validationFailed = validationFailed;
     }
 }

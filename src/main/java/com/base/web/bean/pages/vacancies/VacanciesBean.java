@@ -34,7 +34,7 @@ public class VacanciesBean extends BaseListBean<Vacancy> {
     }
 
     public void createVacancy() throws IOException {
-        goTo("/signin");
+        goTo("/vacancies/new");
     }
 
     @Override

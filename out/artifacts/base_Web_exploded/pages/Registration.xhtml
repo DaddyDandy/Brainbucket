@@ -3,13 +3,13 @@
                 xmlns:h="http://java.sun.com/jsf/html"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui"
-                template="/resources/templates/BaseSmallEditPage.xhtml">
+                template="/resources/templates/BaseLargeEditPage.xhtml">
 
     <ui:param name="bean" value="#{registrationBean}"/>
 
     <ui:define name="edit_body">
         <p:outputPanel id="edit_panel">
-            <p:panelGrid columns="2" columnClasses="label, value">
+            <p:panelGrid columns="2" columnClasses="label, value" style="margin: auto;">
                 <p:outputLabel value="#{msg.firstName}"/>
                 <p:inputText value="#{bean.firstName}"/>
 
