@@ -1,6 +1,7 @@
 package com.base.persistance;
 
 import com.base.persistance.entityes.domain.*;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -35,6 +36,11 @@ public class HibernateUtil {
         config.addAnnotatedClass(SkillClient.class);
         config.addAnnotatedClass(SkillVacancy.class);
         config.addAnnotatedClass(Vacancy.class);
+    }
+
+    public static Criteria createCriteria(Class<?> clazz) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        return session.createCriteria(clazz);
     }
 
     public static synchronized SessionFactory getSessionFactory() {

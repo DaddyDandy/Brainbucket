@@ -1,15 +1,20 @@
 package com.base.web.bean.pages.vacancies;
 
+import com.base.persistance.HibernateUtil;
 import com.base.persistance.entityes.domain.Vacancy;
 import com.base.web.bean.BaseEntityEditBean;
 import com.base.web.enums.JobTimeType;
 import com.base.web.enums.Location;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,9 +40,30 @@ public class VacancyEditBean extends BaseEntityEditBean<Vacancy> {
 
     private String name;
 
+    private Long editId;
+
+    private boolean newEntity;
+
     @Override
     public void onLoad() {
-        entity = new Vacancy();
+        HttpServletRequest request = (HttpServletRequest)FacesContext.getCurrentInstance().getExternalContext().getRequest();
+        editId = Long.parseLong(request.getParameter("id"));
+
+        if (editId != null && editId > 0) {
+            Session session = HibernateUtil.getSessionFactory().openSession();
+
+            Criteria criteria = session.createCriteria(Vacancy.class);
+            criteria.add(Restrictions.eq("id", editId));
+            entity = (Vacancy) criteria.uniqueResult();
+            session.close();
+            name = entity.getName();
+            bonuses = entity.getBonuses();
+            generalRequirements = entity.getGeneralRequirements();
+            setNewEntity(false);
+        } else {
+            setNewEntity(true);
+            entity = new Vacancy();
+        }
         jobTimeTypes = new ArrayList<>();
         for (JobTimeType type : JobTimeType.values()) {
             jobTimeTypes.add(new SelectItem(type, type.name()));
@@ -51,11 +77,11 @@ public class VacancyEditBean extends BaseEntityEditBean<Vacancy> {
     @Override
     public void onValidate() {
         setValidationFailed(false);
-        if(getName() == null || getName().isEmpty()) {
+        if (getName() == null || getName().isEmpty()) {
             FacesContext.getCurrentInstance().addMessage("vacancyName", new FacesMessage(FacesMessage.SEVERITY_ERROR, "'Name' is required field", ""));
             setValidationFailed(true);
         }
-        if(getGeneralRequirements() == null || getGeneralRequirements().isEmpty()) {
+        if (getGeneralRequirements() == null || getGeneralRequirements().isEmpty()) {
             FacesContext.getCurrentInstance().addMessage("vacancyGR", new FacesMessage(FacesMessage.SEVERITY_ERROR, "'General requirements' is required field", ""));
             setValidationFailed(true);
         }
@@ -70,16 +96,36 @@ public class VacancyEditBean extends BaseEntityEditBean<Vacancy> {
         entity.setJobTimeType(getJobTimeType());
         entity.setLocation(getLocation());
 
-        save();
+        if (isNewEntity()) {
+            save();
+        } else {
+            update();
+        }
         try {
-            goTo("/");
+            if (!isNewEntity()) {
+                goTo("/vacancies/" + editId);
+            } else {
+                goTo("/vacancies/");
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void cancel() throws IOException {
-        goTo("/");
+        if (!isNewEntity()) {
+            goTo("/vacancies/" + editId);
+        } else {
+            goTo("/vacancies/");
+        }
+    }
+
+    public Long getEditId() {
+        return editId;
+    }
+
+    public void setEditId(Long editId) {
+        this.editId = editId;
     }
 
     public List<SelectItem> getLocations() {
@@ -136,5 +182,13 @@ public class VacancyEditBean extends BaseEntityEditBean<Vacancy> {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isNewEntity() {
+        return newEntity;
+    }
+
+    public void setNewEntity(boolean newEntity) {
+        this.newEntity = newEntity;
     }
 }

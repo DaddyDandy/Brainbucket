@@ -2,20 +2,18 @@ package com.base.web.bean.pages;
 
 import com.base.web.bean.PageBean;
 import com.base.web.commons.helpers.ResourceHelper;
-
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
 import java.io.IOException;
 
 /**
  * Created by Cooper on 29.03.2015.
  */
-@ManagedBean(name = "loginBean")
+@ManagedBean(name = "loginBean", eager = true)
 @ViewScoped
 public class LoginBean extends PageBean {
 
-    private String email;
+    private String login;
 
     private String password;
 
@@ -30,8 +28,6 @@ public class LoginBean extends PageBean {
     }
 
     public void signIn() throws IOException {
-
-
         goTo("/");
     }
 
@@ -49,12 +45,13 @@ public class LoginBean extends PageBean {
         return true;
     }
 
-    public String getEmail() {
-        return email;
+    public String getLogin() {
+
+        return login;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getPassword() {

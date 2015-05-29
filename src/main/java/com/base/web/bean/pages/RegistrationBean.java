@@ -49,6 +49,11 @@ public class RegistrationBean extends BaseEntityEditBean<User> {
 
     public void saveUser() {
         onSave();
+        try {
+            goBack();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void cancel() throws IOException {

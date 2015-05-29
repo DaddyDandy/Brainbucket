@@ -1,0 +1,32 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/resources/templates/BaseSmallEditPage.xhtml">
+
+    <ui:param name="bean" value="#{vacancyViewBean}"/>
+
+    <ui:define name="edit_body">
+        <p:outputPanel id="login_panel">
+            <div style="border-bottom: solid 1px grey; margin-bottom: 45px;">
+                <div>
+                    #{vacancyViewBean.vacancy.name}
+                </div>
+                <div style="margin: 10px 0px 10px 0px;">General equirements:</div>
+                <div style="  margin: 10px 0px 10px 15px;">#{vacancyViewBean.vacancy.generalRequirements}</div>
+                <div style="margin: 10px 0px 10px 0px;">Bonuses:</div>
+                <div style="  margin: 10px 0px 10px 15px;">#{vacancyViewBean.vacancy.bonuses}</div>
+            </div>
+        </p:outputPanel>
+
+        <div class="btn-bottom">
+            <p:commandButton widgetVar="submitBtn" action="#{bean.edit}"
+                             value="#{msg.btnEdit}"/>
+            <p:commandButton widgetVar="cancelBtn" action="#{bean.goBack}"
+                             value="#{msg.btnBack}"/>
+        </div>
+    </ui:define>
+
+</ui:composition>
+

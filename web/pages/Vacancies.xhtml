@@ -7,14 +7,29 @@
     <ui:param name="bean" value="#{vacanciesBean}"/>
 
     <ui:define name="main_part">
+        <div style="padding: 35px 45px 35px 45px;">
+            <p:dataList value="#{bean.vacancies}" var="vacancy">
+                <div style="border-bottom: solid 1px grey; margin-bottom: 45px;">
+                    <div style="display: inline-block;">
+                        <p:graphicImage url="/resources/img/Bucket-Milk-icon-512.png" style="width: 60px; float: left;"/>
 
+                        <div style="float: left;margin-top: 10px;">
+                            <p:commandLink style="color: #00e000;" value="#{vacancy.name}" action="#{bean.viewVacancy}">
+                                <f:setPropertyActionListener value="#{vacancy.id}"
+                                                             target="#{bean.selectedVacancy}"/>
+                            </p:commandLink>
+                        </div>
+                    </div>
+                </div>
+            </p:dataList>
+        </div>
     </ui:define>
 
     <ui:define name="sub_part">
         <h:form id="subForm">
             <p:commandButton
                     value="#{msg.addVacancy}" style="width: 100%;"
-                    action="#{bean.createVacancy}" />
+                    action="#{bean.createVacancy}"/>
         </h:form>
     </ui:define>
 

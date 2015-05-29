@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns:sec="http://www.springframework.org/schema/security"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                 http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                 http://www.springframework.org/schema/security
+                 http://www.springframework.org/schema/security/spring-security-4.0.xsd
+                 http://www.springframework.org/schema/context
+                 http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+    <sec:http auto-config="true" use-expressions="true">
+
+        <sec:intercept-url pattern="/**" access="permitAll"/>
+        <sec:intercept-url pattern="/vacancies/**" access="ROLE_ADMIN"/>
+        <sec:logout invalidate-session="true" delete-cookies="true" logout-success-url="/"/>
+
+
+        <sec:anonymous username="guest" granted-authority="ROLE_ANONYMOUS"/>
+        <sec:csrf disabled="true"/>
+    </sec:http>
+
+    <!-- Enable method level Spring Security by annotations  -->
+    <sec:global-method-security pre-post-annotations="enabled" />
+
+
+    <!-- Set customUserDetailsService class as the authentication Manager for Spring Security-->
+    <sec:authentication-manager alias="authenticationManager">
+        <sec:authentication-provider user-service-ref="userDetailsServiceImpl">
+            <sec:password-encoder hash="plaintext"/>
+        </sec:authentication-provider>
+    </sec:authentication-manager>
+</beans:beans>

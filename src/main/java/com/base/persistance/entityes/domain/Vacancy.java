@@ -26,10 +26,10 @@ public class Vacancy extends NamedEntity {
     @Enumerated(value = EnumType.STRING)
     private JobTimeType jobTimeType;
 
-    @Column
+    @Column(columnDefinition = "VARCHAR(1024)")
     private String bonuses;
 
-    @Column
+    @Column(columnDefinition = "VARCHAR(1024)")
     private String generalRequirements;
 
     @OneToMany(mappedBy = "vacancy")
